@@ -25,12 +25,12 @@ def leap_year(year: int) -> bool:
     hundred = year % 100
     fourhundred = year % 400
 
-    if four == 0: # if its not %4 != leap year
-        if hundred != 0: # if not %100 not leap year
+    if four == 0: 
+        if hundred != 0: 
             return True
-        elif fourhundred == 0: # if %400 then it is leap year
+        elif fourhundred == 0:
             return True
-    return False # %4 but not %100
+    return False 
 
 def mon_max(month:int, year:int) -> int:
     "returns the maximum day for a given month. Includes leap year check"
